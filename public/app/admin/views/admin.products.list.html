@@ -1,0 +1,32 @@
+<div>
+    <div class="row">
+        <div class="col-sm-9">
+            <a class="btn btn-info" ng-href="/#/admin">Vis hierarki</a>
+            <a class="pull-right btn btn-success" ng-href="/#/admin/createProduct/0">Opret produkt</a>
+        </div>
+    </div>
+    <div id="productsSection" class="col-sm-9">
+        <table id="productsTable" class="table table-bordered table-striped">
+            <th>Id</th>
+            <th>Produkt</th>
+            <th>Kort beskrivelse</th>
+            <th>Beskrivelse</th>
+            <th>Opdater</th>
+            <th></th>
+            <tr ng-repeat="product in products">
+                <td>{{ product.productId }}</td>
+                <td>{{ product.name }}</td>
+                <td>{{ product.shortDescription}}</td>
+                <td>{{ product.longDescription }}</td>
+                <td>
+                    <a class="btn btn-success" ng-href="/#/admin/updateProduct/{{product.productId}}">Opdater</a>
+                </td>
+                <td>
+                    <form>
+                        <button type="submit" ng-click="deleteProduct(product.productId)" class="btn btn-danger">Slet</button>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div><!--productsSection-->
+</div>

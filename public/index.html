@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- Stylesheets-->
+    <link rel="stylesheet" href="libs/angular-ui-tree/dist/angular-ui-tree.min.css">
+    <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="ressources/css/main.css">
+    <link rel="stylesheet" href="ressources/css/upload.css">
+</head>
+<body>
+<h1>Produktkatalog</h1>
+<!-- insert angular templates -->
+<div ng-view id="mainContent"></div>
+<!-- External libraries -->
+<script src="libs/angular/angular.js"></script>
+<script src="libs/angular-route/angular-route.js"></script>
+<script src="libs/angular-ui-tree/dist/angular-ui-tree.js"></script>
+<script src="libs/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="libs/ng-file-upload-shim/ng-file-upload-shim.min.js"></script>
+<script src="libs/ng-file-upload/ng-file-upload.min.js"></script>
+<!-- Main angular app -->
+<script src="app.js"></script>
+<!-- angular app controllers and services  -->
+<script src="app/admin/controllers/admin.product.controller.js"></script>
+<script src="app/admin/controllers/admin.products.hierarchy.controller.js"></script>
+<script src="app/admin/controllers/admin.products.list.controller.js"></script>
+<script src="app/admin/controllers/admin.category.controller.js"></script>
+<script src="app/admin/controllers/admin.upload.images.controller.js"></script>
+<script src="app/services/product.service.js"></script>
+<script src="app/services/category.service.js"></script>
+<script src="app/services/product.flag.service.js"></script>
+</body>
+</html>
