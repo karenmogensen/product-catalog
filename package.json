@@ -1,0 +1,27 @@
+{
+  "name": "product_catalog",
+  "version": "1.0.0",
+  "description": "Generic product catalog using MEAN stack",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/karenmogensen/productCatalog.git"
+  },
+  "author": "Karen Mogensen",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "connect-multiparty": "^2.0.0",
+    "cors": "^2.7.1",
+    "express": "^4.13.4",
+    "mongoose": "^4.4.14",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-git": "^1.7.1"
+  }
+}
